@@ -1,0 +1,19 @@
+.App{
+  margin: 0 auto;
+  width: 300px;
+}
+
+h1{
+  border: 3px solid #a5d060;
+  text-align: center;
+}
+
+.TodoList{
+  font-family: 'Courier Prime', monospace;
+  padding: 20px;
+  border: 3px solid #ffd964;
+}
+
+li{
+  list-style-type: none;
+}
