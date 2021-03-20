@@ -28,11 +28,12 @@ function App(props){
         }
       </div>
       <div data-testid="done-list" className="DoneList">
-          <h2>Done</h2>
+          <b>Done</b>
           {taskList.map((task, index) =>
               (task.done &&
                 (<li key={index}>
-                  {task.title}
+                  <input type="checkbox" id={index} name={`task${index}`} onChange={handleChange} checked/>
+                  <label for={index}> {task.title}</label>
                 </li>)
               )
           )}

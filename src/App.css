@@ -9,11 +9,17 @@ h1{
 }
 
 .TodoList{
-  font-family: 'Courier Prime', monospace;
   padding: 20px;
   border: 3px solid #ffd964;
 }
 
+.DoneList{
+  border: 3px solid #50b1bd;
+  padding: 10px 20px 20px 20px;
+  margin-top: 20px;
+}
+
 li{
+  font-family: 'Courier Prime', monospace;
   list-style-type: none;
 }
