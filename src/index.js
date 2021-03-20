@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App todoList={["ler livro", "jogar videogame"]}/>
+    <App todoList={[{title:"ler livro", done: false}, {title: "jogar videogame", done: false}]}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
