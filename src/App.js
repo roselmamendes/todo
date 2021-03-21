@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import TodoList from './components/TodoList';
 import './App.css';
+import DoneList from './components/DoneList';
 
 function App(props){
   const [taskList, setTaskList] = useState(props.todoList);
@@ -19,17 +20,7 @@ function App(props){
     <div className="App">
       <h1>TODO</h1>
       <TodoList taskList={taskList} handleChange={handleChange}/>
-      <div data-testid="done-list" className="DoneList">
-          <b>Done</b>
-          {taskList.map((task, index) =>
-              (task.done &&
-                (<li key={index}>
-                  <input type="checkbox" id={index} name={`task${index}`} onChange={handleChange} checked/>
-                  <label htmlFor={index}> {task.title}</label>
-                </li>)
-              )
-          )}
-      </div>
+      <DoneList taskList={taskList} handleChange={handleChange} />
     </div>
   );
 }
